@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Лаба 1</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="header.css">
+    <script defer src="submitValidator.js"></script>
+</head>
+<body class="body_main">
+    <div class="glow_head">
+            <span>Обляшевский С. А., группа Р32312, Вариант - 3110.</span>
+    </div>
+    <div class="main">
+        <div class="content">
+            <div class="input glow">
+                <div class="task">
+                    <div class="canvasDiv">
+                        <canvas width="400px" height="400px" id="canvas"></canvas>
+                        <script src="canvas.js"></script>
+                    </div>
+                    <div class="taskText">
+                        <span>Изменение X: Select {'-4','-3','-2','-1','-0','1','2','3','4'}</span><br><br>
+                        <span>Изменение Y: Text(-5...5)</span><br><br>
+                        <span>Изменение R: Text(-2..5)</span>
+                    </div>
+                </div>
+                <form class = "js-form" action="tests.php" method="post" class="form">
+                    <div class="postForm">
+                    <div class="chooseX">
+                        <span>X:</span>
+                        <select name="xCoordinate" class="selectX">
+                            <option value="-4">-4</option>
+                            <option value="-3">-3</option>
+                            <option value="-2">-2</option>
+                            <option value="-1">-1</option>
+                            <option value="0">&nbsp0</option>
+                            <option value="1">&nbsp1</option>
+                            <option value="2">&nbsp2</option>
+                            <option value="3">&nbsp3</option>
+                            <option value="4">&nbsp4</option>
+                        </select>
+                    </div>
+                    <div class="chooseX">
+                        <span>Y:</span>
+                        <input class="inputCoordinateY" id="y" name="yCoordinate" type="text" placeholder="Введите число от -5 до 5" maxlength="7">
+                    </div>
+                    <div class="chooseX">
+                        <span>R:</span>
+                        <input class="inputR" id="r" name= "radius" type="text" placeholder="Введите число от -2 до 5" maxlength="7">
+                    </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="resetB">
+                            <input type="reset" id="reset" name="resetButton" placeholder="Очистить">
+                        </div>
+                        <div class="submitB">
+                            <input type="submit" id="submit" name="submitButton" placeholder="Отправить" formtarget="_blank">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
